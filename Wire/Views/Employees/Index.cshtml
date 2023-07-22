@@ -1,0 +1,11 @@
+﻿<h1>Employees</h1>
+
+<ul>
+
+    @foreach (var Employee in Model)
+    {
+        <li>
+            <a asp-controller="Employees" asp-action="Browse" asp-route-id="@Employee.EmployeeID">@Employee.FirstName</a>
+        </li>
+    }
+</ul>
